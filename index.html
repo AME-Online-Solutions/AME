@@ -4,6 +4,7 @@
 <title>AME Online Solutions</title>
 <link rel="icon" href="https://sites.google.com/site/ameonlinesolutions/favicon.ico" type="image/icon type">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -223,6 +224,79 @@
     transform: rotateY(-90deg);	
   }
 }
+
+
+
+// **************************  slide show   *************************
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="10">
@@ -242,7 +316,7 @@
         <li><a href="#About">ABOUT</a></li>
         <li><a href="#Modules">MODULES</a></li>
         <li><a href="#Features">FEATURES</a></li>
-        <li><a href="#FINDMYBLOCK">FIND MY BLOCK</a></li>
+        <li><a href="#findmyblock">FIND MY BLOCK</a></li>
         <li><a href="#contact">CONTACT</a></li>
         <li><a href="https://login.ameonlinesolutions.com" target="_blank">LOGIN</a></li>
       </ul>
@@ -251,7 +325,19 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <div style="overflow:hidden;height:392px" width="960px" align="center"><iframe style="display:block;margin:5px auto;text-align:center;border:0px;" width="960px" height="413" src="https://docs.google.com/presentation/d/e/2PACX-1vQA_BnCukZpSGuLYFJQknKpIs_AV-v4KQaf1yk1CHnOhcNnntcRKw0StDPY3nHx-34G7QHpOG_0fOfs/embed?start=true&loop=true&delayms=5000&border=0px"></iframe></div>
+   <div class="slideshow-container">
+    <div class="mySlides w3-animate-fading"><img src="images/Slide1.JPG" style="width:100%"></div>
+    <div class="mySlides w3-animate-fading"><img src="images/Slide2.JPG" style="width:100%"></div>
+    <div class="mySlides w3-animate-fading"><img src="images/Slide3.JPG" style="width:100%"></div>
+    <div class="mySlides w3-animate-fading"><img src="images/Slide4.JPG" style="width:100%"></div>
+    <div class="mySlides w3-animate-fading"><img src="images/Slide5.JPG" style="width:100%"></div>
+    <div class="mySlides w3-animate-fading"><img src="images/Slide6.JPG" style="width:100%"></div>
+    <div class="mySlides w3-animate-fading"><img src="images/Slide7.JPG" style="width:100%"></div>
+    <div class="mySlides w3-animate-fading"><img src="images/Slide8.JPG" style="width:100%"></div>
+    <div class="mySlides w3-animate-fading"><img src="images/Slide9.JPG" style="width:100%"></div>
+    <div class="mySlides w3-animate-fading"><img src="images/Slide10.JPG" style="width:100%"></div>
+    <div class="mySlides w3-animate-fading"><img src="images/Slide11.JPG" style="width:100%"></div>
+  </div>
 </div>
 
 <!-- Container (About Section) -->
@@ -264,7 +350,9 @@
 We are sure that we will be in a position to provide you the best of our services. If you would like to try our modules please feel free to contact us.</p><br>
     </div>
     <div class="col-sm-4" align="center">
-      <span class="glyphicon glyphicon-signal logo"></span><br><button class="btn btn-default btn-lg">Get in Touch</button>
+      <br><br><br>
+      HitCount<br>
+      <a href="https://www.webfreecounter.com/" target="_blank"><img alt="web counter" src="https://www.webfreecounter.com/hit.php?id=grrmxkfxa&amp;nd=7&amp;style=45" border="0"></a>
     </div>
   </div>
 </div>
@@ -332,7 +420,7 @@ We are sure that we will be in a position to provide you the best of our service
 <div id="Features" class="container-fluid">
   <div class="text-center">
     <h2>Features</h2>
-    <h4>Salient Features are as follows</h4>
+    <h4>Salient Features are as follows</h4><br>
   </div>
   <div class="row slideanim">
     <div class="col-sm-4 col-xs-12">
@@ -341,7 +429,7 @@ We are sure that we will be in a position to provide you the best of our service
           <h1>Academics</h1>
         </div>
         <div class="panel-footer">
-          <h4>Outcome Based Education<br>Mentoring<br>In-house Certification<br>Student Tracking<br>Load Distribution</h4>
+          <h4>Outcome Based Education<br><br>Mentoring<br><br>In-house Certification<br><br>Student Tracking<br><br>Load Distribution</h4>
         </div>
       </div>      
     </div>     
@@ -351,7 +439,7 @@ We are sure that we will be in a position to provide you the best of our service
           <h1>Examination</h1>
         </div>
         <div class="panel-footer">
-          <h4>Auto Block Preparation<br>Auto Supervision Allotment<br>Generate Supervision Orders<br>Seating Arrangement<br>Result Analysis in Minutes</h4>
+          <h4>Auto Block Preparation<br><br>Auto Supervision Allotment<br><br>Generate Supervision Orders<br><br>Seating Arrangement<br><br>Result Analysis in Minutes</h4>
         </div>
       </div>      
     </div>       
@@ -361,7 +449,7 @@ We are sure that we will be in a position to provide you the best of our service
           <h1>Organizer</h1>
         </div>
         <div class="panel-footer">
-          <h4>Digital Filing System<br>Online Approvals<br>Office Orders<br>ISO Style Formats<br>Portfolio Management</h4>
+          <h4>Digital Filing System<br><br>Online Approvals<br><br>Office Orders<br><br>ISO Style Formats<br><br>Portfolio Management</h4>
         </div>
       </div>      
     </div>    
@@ -401,7 +489,7 @@ We are sure that we will be in a position to provide you the best of our service
 <br><br><br><br>
 
 <!-- Container (Contact Section) -->
-<div id="FINDMYBLOCK" class="container-fluid">
+<div id="findmyblock" class="container-fluid">
 <div style="text-align:center">
 <br>
 <font size="5"><font size="6"><span style="color:rgb(0,0,255)">Find your </span></font></font><font size="5"><font size="6"><span style="color:rgb(0,0,255)"><font size="5"><font size="6"><span style="color:rgb(0,0,255)">Block Number of </span></font></font>Today's Exam<br>
@@ -414,15 +502,14 @@ who are using Exam module provided by <b>AME Online Solutions</b>.</font></div>
 <footer class="container-fluid text-center">
   <!-- Container (Contact Section) -->
       <div id="contact">
-      <font style="font-size:24px;color:rgb(0,0,0);">
-      <table width="100%" style="background-color:gray;"><tr><td align="left">
-      <span class="glyphicon glyphicon-envelope"></span> Email: info@</font><font style="font-size:24px;color:rgb(14,175,193);">ame</font><font style="font-size:24px;color:rgb(245,176,65);">online</font><font style="font-size:24px;color:rgb(51,72,103);">solutions.</font><font style="font-size:24px;color:rgb(0,0,255);">com</font></td><td align="center">
-      <font style="font-size:24px;color:rgb(0,0,0);">
-      <i class="fa fa-whatsapp"></i> +91 9923663834/+91 7972202909</td><td align="right">
-      <span class="glyphicon glyphicon-map-marker"></span>Pune, India</td><td align="right">
-      <a href="#myPage" title="To Top">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-      </a>
+      <font style="font-size:20px;color:rgb(255,255,255);">
+      <table width="100%" style="background-color:#b47800;"><tr><td align="left">
+        <i class="fa fa-whatsapp"></i> +91 9923663834 /+91 7972202909
+        </td><td align="center">
+        <i class='fa fa-envelope'></i> Email: info@ameonlinesolutions.com
+        </td><td align="right">
+        <i class='fa fa-map-marker'></i> Pune, India</td><td align="right">
+        &nbsp;&nbsp;<a href="#myPage" title="To Top"><i class='fa fa-arrow-circle-up' style="color:rgb(255,255,255);"></i></a>&nbsp;&nbsp;
       </td></tr></table>
       </font>
       </div>
@@ -462,7 +549,30 @@ $(document).ready(function(){
         }
     });
   });
-})
+});
+
+
+// Slide show
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  //var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  //for (i = 0; i < dots.length; i++) {
+  //  dots[i].className = dots[i].className.replace(" active", "");
+  //}
+  slides[slideIndex-1].style.display = "block";  
+  //dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000);
+}
+
 </script>
 
 </body>
