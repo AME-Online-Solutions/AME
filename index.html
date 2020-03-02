@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AME Online Solutions</title>
+<link rel="icon" href="https://sites.google.com/site/ameonlinesolutions/favicon.ico" type="image/icon type">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: black;
+    background-color: #FEF5E7;
+    width:100%;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-size: 22px;
+    line-height: 1.375em;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }  
+  .jumbotron {
+    background-color: #FEF5E7;
+    color: #fff;
+    padding: 47px 0px 0px;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0px 0px 0px 0px;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: black;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #b47800 !important;
+    padding: 10px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: black;
+    font-size: 18px;
+    margin-bottom:10px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin: 0 0 10 0 ;
+    padding:0 0 10 0;
+    background-color: #b47800;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 1px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+// **************************  spin image   *************************
+.spinimage {
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.rotateimage{
+  -webkit-animation: rotation 7s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg);	
+  }
+  to {
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);	
+  }
+}
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+        <span class="icon-bar"  ></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img class='rotateimage' src='https://sites.google.com/site/ameonlinesolutions/AMELogo.jpg' alt='AME Logo' style='margin:5px;padding:0px;float:left;width:40px;height:40px;border-radius:18px;border:1px solid #fff;display: block;' > <font color=white style='font-family: Impact, Charcoal, serif;font-size:32px;'>&nbsp; AME Online Solutions</font>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#About">ABOUT</a></li>
+        <li><a href="#Modules">MODULES</a></li>
+        <li><a href="#Features">FEATURES</a></li>
+        <li><a href="#FINDMYBLOCK">FIND MY BLOCK</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="https://login.ameonlinesolutions.com" target="_blank">LOGIN</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <div style="overflow:hidden;height:392px" width="960px" align="center"><iframe style="display:block;margin:5px auto;text-align:center;border:0px;" width="960px" height="413" src="https://docs.google.com/presentation/d/e/2PACX-1vQA_BnCukZpSGuLYFJQknKpIs_AV-v4KQaf1yk1CHnOhcNnntcRKw0StDPY3nHx-34G7QHpOG_0fOfs/embed?start=true&loop=true&delayms=5000&border=0px"></iframe></div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="About" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Us</h2><br>
+      <h4>AME Online Solutions is based in Pune, India. We have been in business since 2017 and offering our services to our customers. We provide online solutions mainly for academic institutions.  For other organizations we offer customized solutions that requires to manage the data.</h4><br>
+      <p>Our innovative development team is very strong, enabling us to provide our clients with cost effective and robust solutions. Our strength is to offer highly customized solutions to your day-to-day problems so that you can organize your tasks and achieve your goals effectively.
+We are sure that we will be in a position to provide you the best of our services. If you would like to try our modules please feel free to contact us.</p>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>VISION:</strong> Empowering our customers by providing the required data of their business in few clicks.</h4><br>
+      <h4><strong>MISSION:</strong> Our mission is to have continuous improvement towards customer delight.</h4>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Modules Section) -->
+<div id="Modules" class="container-fluid text-center">
+  <h2>MODULES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4" align=center>
+      <div style="border-radius: 20px 20px 20px 20px;background-color: #b47800;  border: 2px solid black; color: black;padding: 10px 10px 10px 10px;display:inline-block;"><img src='https://sites.google.com/site/vmkale/sAcademics.jpg' alt='Academics' style='margin:0px;padding:0px;align:center;width:60px;height:60px;border-radius:10px;border:1px solid #fff;display: block;' ></div>
+      <h4>ACADEMICS</h4>
+      <p>CO-PO Mapping,Defaulter's List,Mentoring,<br>Class Coordination, Academic Coordination etc.</p>
+    </div>
+    <div class="col-sm-4">
+      <div style="border-radius: 20px 20px 20px 20px;background-color: #b47800;  border: 2px solid black; color: black;padding: 10px 10px 10px 10px;display:inline-block;"><img src='https://sites.google.com/site/vmkale/sExam.jpg' alt='Exam' style='margin:0px;padding:0px;align:center;width:60px;height:60px;border-radius:10px;border:1px solid #fff;display: block;' ></div>
+      <h4>EXAMINATION</h4>
+      <p>Block Preparation, Supervision Orders, Display Marks,<br>Remuneration, Exam-at-a-Glance, Result Analysis etc.</p>
+    </div>
+    <div class="col-sm-4">
+            <div style="border-radius: 20px 20px 20px 20px;background-color: #b47800;  border: 2px solid black; color: black;padding: 10px 10px 10px 10px;display:inline-block;"><img src='https://sites.google.com/site/vmkale/sDashboard.jpg' alt='Dashboard' style='margin:0px;padding:0px;align:center;width:60px;height:60px;border-radius:10px;border:1px solid #fff;display: block;' ></div>
+
+      <h4>DASHBOARD</h4>
+      <p>Staff Count, Student Count, Student Fees,<br>Staff Details, Academic Info, Exam Info etc.</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+            <div style="border-radius: 20px 20px 20px 20px;background-color: #b47800;  border: 2px solid black; color: black;padding: 10px 10px 10px 10px;display:inline-block;"><img src='https://sites.google.com/site/vmkale/sHR.jpg' alt='HR' style='margin:0px;padding:0px;align:center;width:60px;height:60px;border-radius:10px;border:1px solid #fff;display: block;' ></div>
+
+      <h4>HR</h4>
+      <p>Biometric Attendance, Online Approvals, Appraisals,<br>Leave Management, 360 Degree Feedback etc.</p>
+    </div>
+    <div class="col-sm-4">
+            <div style="border-radius: 20px 20px 20px 20px;background-color: #b47800;  border: 2px solid black; color: black;padding: 10px 10px 10px 10px;display:inline-block;"><img src='https://sites.google.com/site/vmkale/sStudents.jpg' alt='Students' style='margin:0px;padding:0px;align:center;width:60px;height:60px;border-radius:10px;border:1px solid #fff;display: block;' ></div>
+
+      <h4>STUDENTS</h4>
+      <p>Admission Process, Bonafide Certificate, Certifications,<br>Transfer Certificates, Student Progression etc. </p>
+    </div>
+    <div class="col-sm-4">
+            <div style="border-radius: 20px 20px 20px 20px;background-color: #b47800;  border: 2px solid black; color: black;padding: 10px 10px 10px 10px;display:inline-block;"><img src='https://sites.google.com/site/vmkale/sServices.jpg' alt='Services' style='margin:0px;padding:0px;align:center;width:60px;height:60px;border-radius:10px;border:1px solid #fff;display: block;' ></div>
+
+      <h4 style="color:#303030;">SERVICES</h4>
+      <p>Accounts Dept, Budget, Hostel,<br>Expenses, Transport, Hall Bookings etc.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Features Section) -->
+<div id="Features" class="container-fluid">
+  <div class="text-center">
+    <h2>Features</h2>
+    <h4>Salient Features are as follows</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Academics</h1>
+        </div>
+        <div class="panel-footer">
+          <h4>Outcome Based Education<br>Mentoring<br>In-house Certification<br>Student Tracking<br>Load Distribution</h4>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Examination</h1>
+        </div>
+        <div class="panel-footer">
+          <h4>Auto Block Preparation<br>Auto Supervision Allotment<br>Generate Supervision Orders<br>Seating Arrangement<br>Result Analysis in Minutes</h4>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Organizer</h1>
+        </div>
+        <div class="panel-footer">
+          <h4>Digital Filing System<br>Online Approvals<br>Office Orders<br>ISO Style Formats<br>Portfolio Management</h4>
+        </div>
+      </div>      
+    </div>    
+  </div>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>Students can see their exam block, class attendance, exam marks etc through their login.</h4>
+      </div>
+      <div class="item">
+        <h4>Customized menus can be added based on the requirements.</h4>
+      </div>
+      <div class="item">
+        <h4>Portfolio management for various coordinators such as academic coordinator, Class coordinator, Project Coordinator.</h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div id="FINDMYBLOCK" class="container-fluid">
+<div style="text-align:center">
+<br>
+<font size="5"><font size="6"><span style="color:rgb(0,0,255)">Find your </span></font></font><font size="5"><font size="6"><span style="color:rgb(0,0,255)"><font size="5"><font size="6"><span style="color:rgb(0,0,255)">Block Number of </span></font></font>Today's Exam<br>
+</span></font></font></div>
+<div style="text-align:center"><font size="5">This facility is available for those colleges,<br>
+who are using Exam module provided by <b>AME Online Solutions</b>.</font></div>
+<iframe style="display:block;margin:5px auto;text-align:center;border:0px;" width="100%" height="1000" src="https://script.google.com/a/ameonlinesolutions.com/macros/s/AKfycbz7OlpvoPZcXvyiKj8gk6iId4fn8JpyTBiKnKcIeA/exec?title=Find%20My%20Block"></iframe>
+</div>
+
+<footer class="container-fluid text-center">
+  <!-- Container (Contact Section) -->
+  <div id="contact" class="container-fluid bg-grey" align=center>
+    <div class="row">
+      <div class="col-sm-5" align=center>
+        <font style="font-size:24px;color:rgb(0,0,0);">
+        <span class="glyphicon glyphicon-envelope"></span> Email: info@</font><font style="font-size:24px;color:rgb(14,175,193);">ame</font><font style="font-size:24px;color:rgb(245,176,65);">online</font><font style="font-size:24px;color:rgb(51,72,103);">solutions.</font><font style="font-size:24px;color:rgb(0,0,255);">com</font><font style="font-size:24px;color:rgb(0,0,0);">
+        <br><i class="fa fa-whatsapp"></i> +91 9923663834
+        <br><span class="glyphicon glyphicon-map-marker"></span>Pune, India</font>
+      </div>
+  </div>
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
