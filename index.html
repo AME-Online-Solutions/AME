@@ -43,8 +43,41 @@
     margin-bottom: 0px 0px 0px 0px;
   }
   .container-fluid {
-    padding: 5px 5px;
+    padding: 5px 5px 0px 5px;
   }
+  
+  .navbar {
+    margin: 0 0 10 0 ;
+    padding:0 0 10 0;
+    background-color: #b47800;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    height:50px;
+    letter-spacing: 1px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+    background-color: #b47800;
+    padding:10px;
+    margin:0px;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: black !important;
+    padding:10px;
+    margin:0px;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  
+  
+  
   .bg-grey {
     background-color: #f6f6f6;
   }
@@ -125,29 +158,6 @@
     margin: 15px 0;
     background-color: #f4511e;
     color: #fff;
-  }
-  .navbar {
-    margin: 0 0 10 0 ;
-    padding:0 0 10 0;
-    background-color: #b47800;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 1px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
   }
   footer .glyphicon {
     font-size: 20px;
@@ -302,17 +312,17 @@ img {vertical-align: middle;}
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="10">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
-        <span class="icon-bar"  ></span>
+<nav class="navbar navbar-default navbar-fixed-top" style="margin:0px;padding:0px;">
+  <div class="container" style="margin:0px;padding:5px;">
+    <div class="navbar-header"  >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:#FEF5E7;">
+        <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <img class='rotateimage' src='https://sites.google.com/site/ameonlinesolutions/AMELogo.jpg' alt='AME Logo' style='margin:5px;padding:0px;float:left;width:40px;height:40px;border-radius:18px;border:1px solid #fff;display: block;' > <font color=white style='font-family: Impact, Charcoal, serif;font-size:32px;'>&nbsp; AME Online Solutions</font>
+      <div style="overflow:hidden;white-space: nowrap;"><img class='rotateimage' src='https://sites.google.com/site/ameonlinesolutions/AMELogo.jpg' alt='AME Logo' style='margin:2px 2px 5px 10px;padding:0px;float:left;width:40px;height:40px;border-radius:18px;border:1px solid #fff;display: block;' > <font color=white style='font-family: Impact, Charcoal, serif;font-size:32px;white-space: nowrap;padding:0px;'>&nbsp; AME Online Solutions</font></div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse" id="myNavbar" >
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#About">ABOUT</a></li>
         <li><a href="#Modules">MODULES</a></li>
@@ -360,11 +370,11 @@ We are sure that we will be in a position to provide you the best of our service
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-2" >
-      <br><br><span class="glyphicon glyphicon-globe logo slideanim"></span>
+    <div class="col-sm-2" align="center">
+      <span class="glyphicon glyphicon-globe logo slideanim" style="padding:40px 10px 10px 10px;"></span>
     </div>
     <div class="col-sm-10">
-      <h2>Our Values</h2><br>
+      <h2 align="center">Our Values</h2><br>
       <h4><strong>VISION:</strong> Empowering our customers by providing the required data of their business in few clicks.<br><br>
       <strong>MISSION:</strong> Our mission is to have continuous improvement towards customer delight.</h4><br><br>
     </div>
@@ -503,12 +513,12 @@ who are using Exam module provided by <b>AME Online Solutions</b>.</font></div>
 <footer class="container-fluid text-center">
   <!-- Container (Contact Section) -->
       <div id="contact">
-      <font style="font-size:20px;color:rgb(255,255,255);">
+      <font style="font-size:16px;color:rgb(255,255,255);">
       <table width="100%" style="background-color:#b47800;"><tr><td align="left">
         <i class="fa fa-whatsapp"></i> +91 9923663834 /+91 7972202909
         </td><td align="center">
         <i class='fa fa-envelope'></i> Email: info@ameonlinesolutions.com
-        </td><td align="right">
+        </td><td align="center">
         <i class='fa fa-map-marker'></i> Pune, India</td><td align="right">
         &nbsp;&nbsp;<a href="#myPage" title="To Top"><i class='fa fa-arrow-circle-up' style="color:rgb(255,255,255);"></i></a>&nbsp;&nbsp;
       </td></tr></table>
