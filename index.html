@@ -242,33 +242,24 @@
 // **************************  slide show   *************************
 
 .mySlides {display: none;}
-img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  width: 100%;
   position: relative;
-  margin: auto;
+  margin: 0px;
+  padding-top:50px;
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: black;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
 }
 
 /* The dots/bullets/indicators */
@@ -293,6 +284,14 @@ img {vertical-align: middle;}
   animation-name: fade;
   animation-duration: 1.5s;
 }
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  text-align: center;
+  font-size: 22px;
+}
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
@@ -309,7 +308,35 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
-  </style>
+.LightPattern1{
+  background:linear-gradient(245deg, transparent 25%, #DEB887 75%) 7px -15px, #FEF5E7;  background-color: #FEF5E7;  background-size: 20px 20px;
+}
+.LightPattern2{
+  background:radial-gradient(circle, transparent 25%, #DEB887 20%, #FEF5E7 80%, transparent 80%, transparent);  background-color: #FEF5E7;  background-size: 20px 20px;
+}
+.LightPattern3{
+  background-image: radial-gradient(#DEB887 15%, transparent 16%), radial-gradient(#DEB887 15%, transparent 16%); background-color: #FEF5E7; background-size: 0 0, 15px 15px;
+}
+.LightPattern4{
+  background-image: radial-gradient(#DEB887 15%, transparent 16%), radial-gradient(#DEB887 15%, transparent 16%);  background-color: #FEF5E7;  background-size: 0 0, 5px 5px;
+}
+.LightPattern5{
+  background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),linear-gradient(-45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;  background-color: #FEF5E7;  background-size: 10px 10px;
+}
+.LightPattern6{
+  background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0), linear-gradient(-45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;  background-color: #FEF5E7;  background-size:  0 0, 5px 5px;
+}
+.LightPattern7{
+  background-image: radial-gradient(#DEB887 15%, transparent 16%), radial-gradient(#DEB887 25%, transparent 16%);  background-color: #FEF5E7;  background-size: 0 0, 10px 10px;
+}
+.LightPattern8{
+  background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),linear-gradient(-35deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;  background-color: #FEF5E7;  background-size: 15px 15px;
+}
+.LightPattern9{
+  background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0), linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;  background-color: #FEF5E7;  background-size:  0 0, 5px 5px;
+}
+
+</style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="10">
 
@@ -336,21 +363,83 @@ img {vertical-align: middle;}
   </div>
 </nav>
 
-<div class="jumbotron text-center">
-   <div class="slideshow-container">
-    <div class="mySlides w3-animate-right"><img src="images/Slide1.JPG" style="width:100%"></div>
-    <div class="mySlides w3-animate-right"><img src="images/Slide2.JPG" style="width:100%"></div>
-    <div class="mySlides w3-animate-right"><img src="images/Slide3.JPG" style="width:100%"></div>
-    <div class="mySlides w3-animate-right"><img src="images/Slide4.JPG" style="width:100%"></div>
-    <div class="mySlides w3-animate-right"><img src="images/Slide5.JPG" style="width:100%"></div>
-    <div class="mySlides w3-animate-right"><img src="images/Slide6.JPG" style="width:100%"></div>
-    <div class="mySlides w3-animate-right"><img src="images/Slide7.JPG" style="width:100%"></div>
-    <div class="mySlides w3-animate-right"><img src="images/Slide8.JPG" style="width:100%"></div>
-    <div class="mySlides w3-animate-right"><img src="images/Slide9.JPG" style="width:100%"></div>
-    <div class="mySlides w3-animate-right"><img src="images/Slide10.JPG" style="width:100%"></div>
-    <div class="mySlides w3-animate-right"><img src="images/Slide11.JPG" style="width:100%"></div>
+<div class="slideshow-container">
+<div class="mySlides w3-animate-right">
+  <div class="LightPattern1" style="width:100%;height:200px;">
+  <div class="text">AME ONLINE SOLUTIONS</div>
+  <div class="centered">Organize Data, Improve Outcomes</div>
   </div>
 </div>
+
+<div class="mySlides w3-animate-right">
+  <div class=LightPattern2 style="width:100%;height:200px;">
+  <div class="text">AME ONLINE SOLUTIONS</div>
+  <div class="centered">Wish to implement online system for Outcome-Based-Education?</div>
+  </div>
+</div>
+
+<div class="mySlides w3-animate-right">
+  <div class=LightPattern3 style="width:100%;height:200px;">
+  <div class="text">AME ONLINE SOLUTIONS</div>
+  <div class="centered">Taking lot of time in Block preparation, Supervisor Allotment and generating orders?</div>
+  </div>
+</div>
+<div class="mySlides w3-animate-right">
+  <div class="LightPattern4" style="width:100%;height:200px;">
+  <div class="text">AME ONLINE SOLUTIONS</div>
+  <div class="centered">Would like to have online system for Biometrics integration, Leave Management, Appraisals, Various Feedbacks?</div>
+  </div>
+</div>
+
+<div class="mySlides w3-animate-right">
+  <div class=LightPattern5 style="width:100%;height:200px;">
+  <div class="text">AME ONLINE SOLUTIONS</div>
+  <div class="centered">Would like to have Online Approval system, Digital File Management System?</div>
+  </div>
+</div>
+
+<div class="mySlides w3-animate-right">
+  <div class=LightPattern6 style="width:100%;height:200px;">
+  <div class="text">AME ONLINE SOLUTIONS</div>
+  <div class="centered">Want to establish online Certification system?</div>
+  </div>
+</div>
+<div class="mySlides w3-animate-right">
+  <div class="LightPattern7" style="width:100%;height:200px;">
+  <div class="text">AME ONLINE SOLUTIONS</div>
+  <div class="centered">Taking time to provide services like issueing Bonafide, Transfer Certificate?</div>
+  </div>
+</div>
+
+<div class="mySlides w3-animate-right">
+  <div class=LightPattern8 style="width:100%;height:200px;">
+  <div class="text">AME ONLINE SOLUTIONS</div>
+  <div class="centered">Wish to have online system for conducting Quizes?</div>
+  </div>
+</div>
+
+<div class="mySlides w3-animate-right">
+  <div class=LightPattern9 style="width:100%;height:200px;">
+  <div class="text">AME ONLINE SOLUTIONS</div>
+  <div class="centered">Would you like to capture data from customers at various locations?</div>
+  </div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
 
 <!-- Container (About Section) -->
 <div id="About" class="container-fluid" >
@@ -503,7 +592,7 @@ We are sure that we will be in a position to provide you the best of our service
 <!-- Container (Contact Section) -->
 <div id="findmyblock" class="container-fluid">
 <div style="text-align:center">
-<br>
+<br><br>
 <font size="5"><font size="6"><span style="color:rgb(0,0,255)">Find your </span></font></font><font size="5"><font size="6"><span style="color:rgb(0,0,255)"><font size="5"><font size="6"><span style="color:rgb(0,0,255)">Block Number of </span></font></font>Today's Exam<br>
 </span></font></font></div>
 <div style="text-align:center"><font size="5">This facility is available for those colleges,<br>
@@ -526,6 +615,11 @@ who are using Exam module provided by <b>AME Online Solutions</b>.</font></div>
       </font>
       </div>
 </footer>
+
+
+
+
+
 
 <script>
 $(document).ready(function(){
@@ -563,29 +657,26 @@ $(document).ready(function(){
   });
 });
 
-
-// Slide show
 var slideIndex = 0;
 showSlides();
 
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  //var dots = document.getElementsByClassName("dot");
+  var dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}    
-  //for (i = 0; i < dots.length; i++) {
-  //  dots[i].className = dots[i].className.replace(" active", "");
-  //}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
   slides[slideIndex-1].style.display = "block";  
-  //dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 4000);
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 2 seconds
 }
-
 </script>
 
 </body>
-</html>
+</html> 
