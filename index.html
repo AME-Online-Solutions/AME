@@ -241,14 +241,14 @@
 
 // **************************  slide show   *************************
 
-.mySlides {display: none;}
+.mySlides {display: none;margin:0px;padding:5px;}
 
 /* Slideshow container */
 .slideshow-container {
   width: 100%;
   position: relative;
   margin: 0px;
-  padding-top:50px;
+  padding:50px 5px 5px 5px;
 }
 
 /* Caption text */
@@ -285,12 +285,15 @@
   animation-duration: 1.5s;
 }
 .centered {
+  margin:0px;
+  padding:5px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);  
+  transform: translate(-50%, -70%);  
   text-align: center;
   font-size: 22px;
+  line-height: 110%;
 }
 
 @-webkit-keyframes fade {
@@ -311,11 +314,14 @@
 .LightPattern1{
   background:linear-gradient(245deg, transparent 25%, #DEB887 75%) 7px -15px, #FEF5E7;  background-color: #FEF5E7;  background-size: 20px 20px;
 }
+.LightPattern10{
+  background:radial-gradient(circle, transparent 25%, #DEB887 20%, #FEF5E7 80%, transparent 50%, transparent);  background-color: #FEF5E7;  background-size: 5px 5px;
+}
 .LightPattern2{
   background:radial-gradient(circle, transparent 25%, #DEB887 20%, #FEF5E7 80%, transparent 80%, transparent);  background-color: #FEF5E7;  background-size: 20px 20px;
 }
 .LightPattern3{
-  background-image: radial-gradient(#DEB887 15%, transparent 16%), radial-gradient(#DEB887 15%, transparent 16%); background-color: #FEF5E7; background-size: 0 0, 15px 15px;
+  background-image: radial-gradient(#DEB887 15%, transparent 16%), radial-gradient(#DEB887 15%, transparent 16%); background-color: #FEF5E7; background-size: 0 0, 5px 5px;
 }
 .LightPattern4{
   background-image: radial-gradient(#DEB887 15%, transparent 16%), radial-gradient(#DEB887 15%, transparent 16%);  background-color: #FEF5E7;  background-size: 0 0, 5px 5px;
@@ -330,7 +336,7 @@
   background-image: radial-gradient(#DEB887 15%, transparent 16%), radial-gradient(#DEB887 25%, transparent 16%);  background-color: #FEF5E7;  background-size: 0 0, 10px 10px;
 }
 .LightPattern8{
-  background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),linear-gradient(-35deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;  background-color: #FEF5E7;  background-size: 15px 15px;
+  background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),linear-gradient(35deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;  background-color: #FEF5E7;  background-size: 2px 2px;
 }
 .LightPattern9{
   background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0), linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;  background-color: #FEF5E7;  background-size:  0 0, 5px 5px;
@@ -368,6 +374,12 @@
   <div class="LightPattern1" style="width:100%;height:200px;">
   <div class="text">AME ONLINE SOLUTIONS</div>
   <div class="centered">Organize Data, Improve Outcomes</div>
+  </div>
+</div>
+<div class="mySlides w3-animate-right">
+  <div class=LightPattern10 style="width:100%;height:200px;">
+  <div class="text">AME ONLINE SOLUTIONS</div>
+  <div class="centered">Have problems in collecting data and carrying out <b>Data Analysis</b> ?</div>
   </div>
 </div>
 
